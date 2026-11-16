@@ -66,7 +66,7 @@ OPENWEATHER_API_KEY="your_api_key_here"
 
 📁 Project Structure
 ```
-Air-quality/
+air-quality-ml-main/
 ├── .streamlit/
 │   └── secrets.toml          # API key configuration (not in git)
 ├── app.py                    # Main Streamlit application

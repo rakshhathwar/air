@@ -26,7 +26,7 @@ st.markdown("""
     }
     .sub-header {
         font-size: 1.2rem;
-        color: #5a7a9a;
+        color: #1e3a5f;
         text-align: center;
         padding-bottom: 1.5rem;
     }
@@ -312,54 +312,54 @@ if st.button("🔍 Get Air Quality Data", use_container_width=True, type="primar
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #667eea;">
             <h4 style="margin: 0; color: #1e3a5f;">PM2.5</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #667eea;">{air['pm2_5']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['pm2_5']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #764ba2; margin-top: 0.5rem;">
             <h4 style="margin: 0; color: #1e3a5f;">CO</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #764ba2;">{air['co']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['co']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     with c2:
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #f093fb;">
             <h4 style="margin: 0; color: #1e3a5f;">PM10</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #f093fb;">{air['pm10']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['pm10']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #4facfe; margin-top: 0.5rem;">
             <h4 style="margin: 0; color: #1e3a5f;">NO₂</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #4facfe;">{air['no2']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['no2']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     with c3:
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #43e97b;">
             <h4 style="margin: 0; color: #1e3a5f;">O₃</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #43e97b;">{air['o3']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['o3']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #fa709a; margin-top: 0.5rem;">
             <h4 style="margin: 0; color: #1e3a5f;">SO₂</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #fa709a;">{air['so2']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{air['so2']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     
     # Weather info
     st.markdown(f"""
-    <div style="background: #e8f4f8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-        <strong>🌡️ Weather:</strong> {weather['temperature']:.1f} °C | 💨 Wind: {weather['wind_speed']:.1f} m/s
+    <div style="background: #e8f4f8; padding: 1rem; border-radius: 10px; margin-top: 1rem; color: #1e3a5f;">
+        <strong style="color: #1e3a5f;">🌡️ Weather:</strong> {weather['temperature']:.1f} °C | 💨 Wind: {weather['wind_speed']:.1f} m/s
     </div>
     """, unsafe_allow_html=True)
     
     # Health recommendation
     health_tip = get_health_recommendation(aqi_now)
     st.markdown(f"""
-    <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; border-left: 5px solid #ffc107; margin-top: 1rem;">
-        <strong>💡 Health Tip:</strong> {health_tip}
+    <div style="background: #fff3cd; padding: 1rem; border-radius: 10px; border-left: 5px solid #ffc107; margin-top: 1rem; color: #1e3a5f;">
+        <strong style="color: #1e3a5f;">💡 Health Tip:</strong> {health_tip}
     </div>
     """, unsafe_allow_html=True)
 
@@ -403,28 +403,28 @@ if st.button("🔍 Get Air Quality Data", use_container_width=True, type="primar
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #667eea;">
             <h4 style="margin: 0; color: #1e3a5f;">PM2.5</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #667eea;">{pred['pm2_5']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{pred['pm2_5']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     with p2:
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #f093fb;">
             <h4 style="margin: 0; color: #1e3a5f;">PM10</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #f093fb;">{pred['pm10']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{pred['pm10']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     with p3:
         st.markdown(f"""
         <div style="background: #f0f4f8; padding: 1rem; border-radius: 10px; border-left: 5px solid #43e97b;">
             <h4 style="margin: 0; color: #1e3a5f;">O₃</h4>
-            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #43e97b;">{pred['o3']:.1f} µg/m³</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1e3a5f;">{pred['o3']:.1f} µg/m³</p>
         </div>
         """, unsafe_allow_html=True)
     
     # Model performance
     st.markdown(f"""
-    <div style="background: #e8f4f8; padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-        <strong>📈 Model Performance:</strong> RMSE — Train: {tr_rmse:.2f} | Test: {te_rmse:.2f} (lower is better)
+    <div style="background: #e8f4f8; padding: 1rem; border-radius: 10px; margin-top: 1rem; color: #1e3a5f;">
+        <strong style="color: #1e3a5f;">📈 Model Performance:</strong> RMSE — Train: {tr_rmse:.2f} | Test: {te_rmse:.2f} (lower is better)
     </div>
     """, unsafe_allow_html=True)
 
